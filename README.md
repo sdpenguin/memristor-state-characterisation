@@ -2,6 +2,12 @@
 
 This repository contains code for the state characterisation of memristors, specifically applied to Self-Directed Channel (SDC) memristors. It includes for both fitting a general memristive state model and for estimating the state from data. It contains a dataset for SDC memristors, to which the state characterisation and estimation is applied.
 
+It is based on the following paper:
+
+D. Hajtó, W. El-Geresy, D. Gündüz, and G. Cserey, ‘State Characterisation of Self-Directed Channel Memristive Devices’, arXiv:2505.15757 [cs], May 2025, doi: 10.48550/arXiv.2505.15757
+
+which is [available here](https://arxiv.org/abs/2505.15757).
+
 ## Dependencies
 
 The following Python libraries are required:
@@ -76,3 +82,18 @@ In each retention directory, there are two kinds of CSV:
 N.B.
 - Some parts of the second half of the read CSV may be missing in some cases, so all the reads should be cropped to half their original size to ensure consistency.
 - There is no exact guarantee of the time between the 0th (the write) and the 1st (first read) CSV.
+
+## Citing this Work
+
+Please use the following (BibTeX) citation:
+
+```
+@article{hajtoStateCharacterisationSelfDirected2025,
+  title = {State Characterisation of Self-Directed Channel Memristive Devices},
+  author = {Hajt{\'o}, D{\'a}niel and El-Geresy, Waleed and G{\"u}nd{\"u}z, Deniz and Cserey, Gy{\"o}rgy},
+  year = {2025},
+  month = may,
+  journal = {arXiv:2505.15757 [cs]},
+  doi = {10.48550/arXiv.2505.15757},
+}
+```
